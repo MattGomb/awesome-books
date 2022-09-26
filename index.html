@@ -8,18 +8,40 @@
   <title>Awesome books project</title>
 </head>
 <body>
-  <h1 class="header">Awesome books</h1>
-  <p class="title">dht</p>
-  <p class="author">egergs</p>
-  <button>remove</button>
-  <span class="separator"></span>
-  <p class="title">dht</p>
-  <p class="author">egergs</p>
-  <button>remove</button>
-  <span class="separator"></span>
-  <br>
-  <input type="text" placeholder="Title"> <br>
-  <input type="text" placeholder="Author"> <br>
-  <button>Add</button>
+
+  <main>
+
+   <section id="booksInput">
+
+
+    <form id="contactForm" action="" method="">
+      <ul>
+        <li>
+            <label for="title"></label>
+            <input type="text" id="titleInput" name="user_name" required placeholder="Book Title" maxlength="30">
+        </li>
+        <li>
+            <label for="author"></label>
+            <input type="text" id="authorInput" name="user_email" required placeholder="Book Author">
+        </li>
+        
+      </ul>
+    <button type="submit" id="buttonInput">Add Book</button>
+    
+    <h5 id="mistake"></h5>
+  
+  </form>
+
+   </section>
+    
+
+
+
+  </main>
+  
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>
