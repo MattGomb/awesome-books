@@ -19,10 +19,37 @@ const booksArray = [
 
 ];
 
+let titleInput;
+/* THE INPUTS*/
 document.getElementById('buttonInput').addEventListener('click', () => {
-    const seeMoreText = document.createElement('p');
-    seeMoreText.innerText = 'See More';
-    bookApp.appendChild(seeMoreText);
+
+    titleInput = document.querySelector('#titleInput');
+    titleInput2 = titleInput.value
+
+    authorInput = document.querySelector('#authorInput');
+    authorInput2 = authorInput.value
+    
+    let newBook = {
+      title: titleInput2,
+      author: authorInput2,
+    }
+    
+    booksArray.push(newBook);
+
+    console.log(booksArray);
+
+
+/* THE DOM*/
+
+
+
+
+
+
+
+
+
+
 
 
 });
