@@ -32,6 +32,7 @@ document.getElementById('buttonInput').addEventListener('click', () => {
     authorInput2 = authorInput.value
     
     let newBook = {
+      id: i,
       title: titleInput2,
       author: authorInput2,
     }
@@ -42,41 +43,38 @@ document.getElementById('buttonInput').addEventListener('click', () => {
 
     i++;
 
-  
- 
- 
-
 /* THE DOM*/
 
     
-    const speakerCard = document.createElement('div');
-    speakerCard.classList.add('NewBook');
-    bookApp.appendChild(speakerCard);
+    const bookDiv = document.createElement('div');
+    bookDiv.classList.add('NewBook');
+    bookApp.appendChild(bookDiv);
     
     const bookTitle = document.createElement('h2');
     bookTitle.innerText = newBook.title;
-    bookApp.appendChild(bookTitle);
+    bookDiv.appendChild(bookTitle);
 
     const bookAuthor = document.createElement('h2');
     bookAuthor.innerText = newBook.author;
-    bookApp.appendChild(bookAuthor);
+    bookDiv.appendChild(bookAuthor);
 
     const deleteButton = document.createElement('button');
     deleteButton.innerText = "Remove";
-    deleteButton.setAttribute("id","delete")
-    bookApp.appendChild(deleteButton);
-
-
-
-
-
-
-
-
-
+    deleteButton.setAttribute("id","buttonDelete")
+    bookDiv.appendChild(deleteButton);
 
 });
 
+document.getElementById('buttonDelete').addEventListener('click', () => {
+  function removeItem(booksArray, id) {
+    const index = booksArray.indexOf(id);
+    if (index > -1) {
+      booksArray.splice(index, 1);
+    }
+    return booksArray;
+  }
+  removeItem();
+});
 
 /*
 let title; 
