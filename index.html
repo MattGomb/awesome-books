@@ -12,21 +12,13 @@
   <main>
 
    <section id="booksInput">
-
-
-    <form id="contactForm" action="" method="">
-      <ul>
-        <li>
-            <label for="title"></label>
-            <input type="text" id="titleInput" name="user_name" required placeholder="Book Title" maxlength="30">
-        </li>
-        <li>
-            <label for="author"></label>
-            <input type="text" id="authorInput" name="user_email" required placeholder="Book Author">
-        </li>
-        
-      </ul>
-    <button type="submit" id="buttonInput">Add Book</button>
+    <form id="contactForm">
+      <label for="titleInput" hidden>Title</label>
+      <input class="forminput" type="text" id="titleInput" placeholder="Book Title" required>
+      <label for="authorInput" hidden>Author</label>
+      <input class="forminput" type="text" id="authorInput" placeholder="Book Author" required>
+      <label for="buttonInput" hidden>Add Book</label>
+      <button class="forminput" type="button" id="buttonInput">Add</button>
     
     <h5 id="mistake"></h5>
   
