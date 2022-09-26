@@ -45,7 +45,6 @@ document.getElementById('buttonInput').addEventListener('click', () => {
 
 /* THE DOM*/
 
-    
     const bookDiv = document.createElement('div');
     bookDiv.classList.add('NewBook');
     bookApp.appendChild(bookDiv);
@@ -58,22 +57,16 @@ document.getElementById('buttonInput').addEventListener('click', () => {
     bookAuthor.innerText = newBook.author;
     bookDiv.appendChild(bookAuthor);
 
-    const deleteButton = document.createElement('button');
-    deleteButton.innerText = "Remove";
-    deleteButton.setAttribute("id","buttonDelete")
-    bookDiv.appendChild(deleteButton);
+    const buttonDelete = document.createElement('button');
+    buttonDelete.innerText = 'Remove';
+    buttonDelete.classList.add('buttonDelete')
+    bookDiv.appendChild(buttonDelete);
 
 });
 
-document.getElementById('buttonDelete').addEventListener('click', () => {
-  function removeItem(booksArray, id) {
-    const index = booksArray.indexOf(id);
-    if (index > -1) {
-      booksArray.splice(index, 1);
-    }
-    return booksArray;
-  }
-  removeItem();
+document.getElementsByClassName('buttonDelete').addEventListener('click', () => {
+  let anything = newBook.id;
+  console.log(anything);
 });
 
 /*
