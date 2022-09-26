@@ -19,6 +19,8 @@ const booksArray = [
 
 ];
 
+let i =0;
+
 let titleInput;
 /* THE INPUTS*/
 document.getElementById('buttonInput').addEventListener('click', () => {
@@ -34,23 +36,35 @@ document.getElementById('buttonInput').addEventListener('click', () => {
       author: authorInput2,
     }
     
-    
-     booksArray.push(newBook);
-    
-
-
+    //console.log(i);
+    booksArray.push(newBook);
     console.log(booksArray[i]);
 
+    i++;
+
+  
  
  
 
 /* THE DOM*/
 
-    booksArray.forEach((item) => {
+    
     const speakerCard = document.createElement('div');
     speakerCard.classList.add('NewBook');
     bookApp.appendChild(speakerCard);
-    });
+    
+    const bookTitle = document.createElement('h2');
+    bookTitle.innerText = newBook.title;
+    bookApp.appendChild(bookTitle);
+
+    const bookAuthor = document.createElement('h2');
+    bookAuthor.innerText = newBook.author;
+    bookApp.appendChild(bookAuthor);
+
+    const deleteButton = document.createElement('button');
+    deleteButton.innerText = "Remove";
+    deleteButton.setAttribute("id","delete")
+    bookApp.appendChild(deleteButton);
 
 
 
