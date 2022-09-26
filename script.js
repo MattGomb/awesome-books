@@ -34,14 +34,23 @@ document.getElementById('buttonInput').addEventListener('click', () => {
       author: authorInput2,
     }
     
-    booksArray.push(newBook);
+    
+     booksArray.push(newBook);
+    
 
-    console.log(booksArray);
 
+    console.log(booksArray[i]);
+
+ 
+ 
 
 /* THE DOM*/
 
-
+    booksArray.forEach((item) => {
+    const speakerCard = document.createElement('div');
+    speakerCard.classList.add('NewBook');
+    bookApp.appendChild(speakerCard);
+    });
 
 
 
