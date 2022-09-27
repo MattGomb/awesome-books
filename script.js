@@ -16,8 +16,19 @@
 const bookApp = document.querySelector('#booksInput');
 
 const booksArray = [
-
+  
 ];
+
+window.addEventListener('load', () => {
+  const arr = JSON.parse(window.localStorage.getItem('bookarr'));
+  const booksArray = document.querySelector('#booksInput');
+  arr.forEach((item) => {
+    booksArray.innerHTML += `<div class="bookDiv">
+    <h2 class="title-author">"${item.title}" by ${item.author}</h2>
+    <button id=${arr.indexOf(item)} onclick="deleting(this.id)" class="buttonDelete">Remove</button>
+    </div>`;
+  });
+});
 
 let i =0;
 
@@ -38,7 +49,7 @@ document.getElementById('buttonInput').addEventListener('click', () => {
   }
   
   booksArray.push(newBook);
-  window.localStorage.setItem('bookarr', JSON.stringify(booksArray));
+
   console.log(booksArray[i]);
 
 /* THE DOM*/
@@ -72,4 +83,5 @@ document.getElementById('buttonInput').addEventListener('click', () => {
     
   i++;
 });
+
 
