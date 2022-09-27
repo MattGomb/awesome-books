@@ -3,3 +3,7 @@
     height: 400px;
     background-color: aqua;
 }
+
+#delete {
+    display: none;
+}
