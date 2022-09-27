@@ -37,7 +37,7 @@ document.getElementById('buttonInput').addEventListener('click', () => {
     author: authorInput2,
   }
     
-  //console.log(i);
+ //console.log(i);
   booksArray.push(newBook);
   console.log(booksArray[i]);
 
@@ -63,13 +63,12 @@ document.getElementById('buttonInput').addEventListener('click', () => {
   buttonDelete.setAttribute("id","button"+i);
   bookDiv.appendChild(buttonDelete);
     
-   i++;
-
   document.getElementById("button"+i).addEventListener('click', () => {
     const booksTitle = document.createElement('h2');
     booksTitle.innerText = "mandarina";
     bookDiv.appendChild(booksTitle);
   });
-  
+    
+  i++;
 });
-  
+
