@@ -19,17 +19,17 @@ const booksArray = [
   
 ];
 
-window.addEventListener('load', () => {
+/*window.addEventListener('load', () => {
   const arr = JSON.parse(window.localStorage.getItem('bookarr'));
   const booksArray = document.querySelector('#booksInput');
-  arr.forEach((item) => {
+  /*arr.forEach((item) => {
     booksArray.innerHTML += `<div class="bookDiv">
     <h2 class="title-author">"${item.title}" by ${item.author}</h2>
     <button id=${arr.indexOf(item)} onclick="deleting(this.id)" class="buttonDelete">Remove</button>
     </div>`;
   });
 });
-
+*/
 let i =0;
 
 let titleInput;
@@ -52,6 +52,20 @@ document.getElementById('buttonInput').addEventListener('click', () => {
   
   booksArray.push(newBook);
 
+  function storageee () {
+    const button = JSON.parse(localStorage.getItem('newBook'));
+  if (button) {
+    title.value = button.titleInput2;
+    author.value = button.authorInput2;
+  }
+  
+
+
+ localStorage.setItem('newBook', JSON.stringify(newBook));
+
+}
+titleInput2.addEventListener('button', storageee);
+authorInput2.addEventListener('button', storageee);
   console.log(booksArray[i]);
 
 /* THE DOM*/
