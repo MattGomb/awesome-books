@@ -41,7 +41,7 @@ document.getElementById('buttonInput').addEventListener('click', () => {
     booksArray.push(newBook);
     console.log(booksArray[i]);
 
-    i++;
+    
 
 /* THE DOM*/
 
@@ -59,27 +59,18 @@ document.getElementById('buttonInput').addEventListener('click', () => {
 
     const buttonDelete = document.createElement('button');
     buttonDelete.innerText = 'Remove';
-    buttonDelete.classList.add('buttonDelete')
+    buttonDelete.classList.add('buttonDelete');
+    buttonDelete.setAttribute("id","button"+i);
     bookDiv.appendChild(buttonDelete);
+    
+    document.getElementById("button"+i).addEventListener('click', () => {
+        const booksTitle = document.createElement('h2');
+        booksTitle.innerText = "mandarina";
+        bookDiv.appendChild(booksTitle);
+    });
+    
 
+
+    i++;
 });
 
-document.getElementsByClassName('buttonDelete').addEventListener('click', () => {
-  let anything = newBook.id;
-  console.log(anything);
-});
-
-/*
-let title; 
-let authorINput; 
-
-
-book {
-    author = Shaksperae
-}
-
-function NewBook (title, author) {
-    new.title = input.title;
-    new.author= input.author;
-}
-*/
