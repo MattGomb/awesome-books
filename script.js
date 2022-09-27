@@ -25,52 +25,51 @@ let titleInput;
 /* THE INPUTS*/
 document.getElementById('buttonInput').addEventListener('click', () => {
 
-    titleInput = document.querySelector('#titleInput');
-    titleInput2 = titleInput.value
+  titleInput = document.querySelector('#titleInput');
+  titleInput2 = titleInput.value
 
-    authorInput = document.querySelector('#authorInput');
-    authorInput2 = authorInput.value
+  authorInput = document.querySelector('#authorInput');
+  authorInput2 = authorInput.value
     
-    let newBook = {
-      id: i,
-      title: titleInput2,
-      author: authorInput2,
-    }
+  let newBook = {
+    id: i,
+    title: titleInput2,
+    author: authorInput2,
+  }
     
-    //console.log(i);
-    booksArray.push(newBook);
-    console.log(booksArray[i]);
+  //console.log(i);
+  booksArray.push(newBook);
+  console.log(booksArray[i]);
 
     
 
 /* THE DOM*/
 
-    const bookDiv = document.createElement('div');
-    bookDiv.classList.add('NewBook');
-    bookApp.appendChild(bookDiv);
+  const bookDiv = document.createElement('div');
+  bookDiv.classList.add('NewBook');
+  bookApp.appendChild(bookDiv);
     
-    const bookTitle = document.createElement('h2');
-    bookTitle.innerText = newBook.title;
-    bookDiv.appendChild(bookTitle);
+  const bookTitle = document.createElement('h2');
+  bookTitle.innerText = newBook.title;
+  bookDiv.appendChild(bookTitle);
 
-    const bookAuthor = document.createElement('h2');
-    bookAuthor.innerText = newBook.author;
-    bookDiv.appendChild(bookAuthor);
+  const bookAuthor = document.createElement('h2');
+  bookAuthor.innerText = newBook.author;
+  bookDiv.appendChild(bookAuthor);
 
-    const buttonDelete = document.createElement('button');
-    buttonDelete.innerText = 'Remove';
-    buttonDelete.classList.add('buttonDelete');
-    buttonDelete.setAttribute("id","button"+i);
-    bookDiv.appendChild(buttonDelete);
+  const buttonDelete = document.createElement('button');
+  buttonDelete.innerText = 'Remove';
+  buttonDelete.classList.add('buttonDelete');
+  buttonDelete.setAttribute("id","button"+i);
+  bookDiv.appendChild(buttonDelete);
     
-    document.getElementById("button"+i).addEventListener('click', () => {
-        const booksTitle = document.createElement('h2');
-        booksTitle.innerText = "mandarina";
-        bookDiv.appendChild(booksTitle);
-    });
-    
+   i++;
 
-
-    i++;
+  document.getElementById("button"+i).addEventListener('click', () => {
+    const booksTitle = document.createElement('h2');
+    booksTitle.innerText = "mandarina";
+    bookDiv.appendChild(booksTitle);
+  });
+  
 });
-
+  
