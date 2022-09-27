@@ -52,20 +52,8 @@ document.getElementById('buttonInput').addEventListener('click', () => {
   
   booksArray.push(newBook);
 
-  function storageee () {
-    const button = JSON.parse(localStorage.getItem('newBook'));
-  if (button) {
-    title.value = button.titleInput2;
-    author.value = button.authorInput2;
-  }
-  
-
-//accc
  localStorage.setItem('newBook', JSON.stringify(newBook));
 
-}
-titleInput2.addEventListener('button', storageee);
-authorInput2.addEventListener('button', storageee);
   console.log(booksArray[i]);
 
 /* THE DOM*/
@@ -88,13 +76,18 @@ authorInput2.addEventListener('button', storageee);
   buttonDelete.classList.add('buttonDelete');
   buttonDelete.setAttribute("id","button"+i);
   bookDiv.appendChild(buttonDelete);
+
+  const divider = document.createElement('div');
+  divider.classList.add('divider');
+  bookDiv.appendChild(divider);
     
   document.getElementById("button"+i).addEventListener('click', () => {
     /*const booksTitle = document.createElement('h2');
     booksTitle.innerText = "mandarina";
-    bookDiv.appendChild(booksTitle);*/
+    bookDiv.appendChild(booksTitle);
     
     booksArray.splice(booksArray[i], 1);
+    */
     
     bookDiv.setAttribute('id','delete');
     console.log(booksArray)
