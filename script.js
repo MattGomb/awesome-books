@@ -36,12 +36,10 @@ document.getElementById('buttonInput').addEventListener('click', () => {
     title: titleInput2,
     author: authorInput2,
   }
-    
- //console.log(i);
+  
   booksArray.push(newBook);
+  window.localStorage.setItem('bookarr', JSON.stringify(booksArray));
   console.log(booksArray[i]);
-
-    
 
 /* THE DOM*/
 
@@ -64,9 +62,12 @@ document.getElementById('buttonInput').addEventListener('click', () => {
   bookDiv.appendChild(buttonDelete);
     
   document.getElementById("button"+i).addEventListener('click', () => {
-    const booksTitle = document.createElement('h2');
+    /*const booksTitle = document.createElement('h2');
     booksTitle.innerText = "mandarina";
-    bookDiv.appendChild(booksTitle);
+    bookDiv.appendChild(booksTitle);*/
+    booksArray.splice(booksArray[i], 1);
+
+    console.log(booksArray)
   });
     
   i++;
