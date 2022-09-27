@@ -11,10 +11,21 @@
 #booksInput {
     display: flex;
     flex-direction: column;
+}
 
+#booksInput p {
+    font-weight: bold;
 }
 
 .divider {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid gray;
     margin: 6px 0;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 6px;
+    gap: 12px;
 }

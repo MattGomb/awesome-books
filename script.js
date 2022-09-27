@@ -63,11 +63,11 @@ document.getElementById('buttonInput').addEventListener('click', () => {
   bookDiv.setAttribute("id",'NewBook'+i);
   bookApp.appendChild(bookDiv);
     
-  const bookTitle = document.createElement('h2');
+  const bookTitle = document.createElement('p');
   bookTitle.innerText = newBook.title;
   bookDiv.appendChild(bookTitle);
 
-  const bookAuthor = document.createElement('h2');
+  const bookAuthor = document.createElement('p');
   bookAuthor.innerText = newBook.author;
   bookDiv.appendChild(bookAuthor);
 
