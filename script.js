@@ -22,6 +22,8 @@ const booksArray = [
 let i =0;
 
 let titleInput;
+
+
 /* THE INPUTS*/
 document.getElementById('buttonInput').addEventListener('click', () => {
 
@@ -44,7 +46,8 @@ document.getElementById('buttonInput').addEventListener('click', () => {
 /* THE DOM*/
 
   const bookDiv = document.createElement('div');
-  bookDiv.classList.add('NewBook');
+  bookDiv.classList.add('NewBook'+i);
+  bookDiv.setAttribute("id",'NewBook'+i);
   bookApp.appendChild(bookDiv);
     
   const bookTitle = document.createElement('h2');
@@ -65,8 +68,10 @@ document.getElementById('buttonInput').addEventListener('click', () => {
     /*const booksTitle = document.createElement('h2');
     booksTitle.innerText = "mandarina";
     bookDiv.appendChild(booksTitle);*/
+    
     booksArray.splice(booksArray[i], 1);
-
+    
+    bookDiv.setAttribute('id','delete');
     console.log(booksArray)
   });
     
