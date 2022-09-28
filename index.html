@@ -11,14 +11,16 @@
 
   <main>
 
-   <section>
-    <h1>Awesome books</h1>
+   <section class="container">
+    <h1>All awesome books</h1>
     <div id="booksInput">
       <table class="table">
         <tbody id="book-list"></tbody>
       </table>
     </div>
     <form id="inputForm">
+      <div class="divider"></div>
+      <h1>Add a new book</h1>
       <div class="form">
         <label for="title" hidden>Title</label>
         <input class="forminput" type="text" id="titleInput" placeholder="Title" required>
@@ -27,9 +29,9 @@
         <label for="author" hidden>Author</label>
         <input class="forminput" type="text" id="authorInput" placeholder="Author" required>
       </div>
-      <div class="form">
+      <div class="form form-btn">
         <label for="button" hidden>Add Book</label>
-        <input type="submit" value="Add Book">
+        <input type="submit" class="add-btn" value="Add">
       </div>
     </form>
    </section>

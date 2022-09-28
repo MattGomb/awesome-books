@@ -1,22 +1,29 @@
-#book-list {
-  display: block;
-  padding: 6px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#booksInput {
+  width: 100%;
+}
+
+#inputForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
 }
 
 table {
   width: 100%;
   margin: 0;
-}
-
-#book-list td {
-  display: block;
-  margin-bottom: 6px;
+  min-height: 32px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  width: 50%;
   margin: 12px 0;
 }
 
@@ -25,8 +32,26 @@ table {
   margin-bottom: 6px;
 }
 
-#divider {
-  border-bottom: 1px solid gray;
-  width: 100%;
-  height: 0;
+tr:nth-child(2n) {
+  background-color: lightgray;
+}
+
+td:nth-child(3n) {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 1rem;
+}
+
+.table {
+  border: 2px solid black;
+}
+
+.divider {
+  margin-top: 2rem;
+  border-bottom: 5px solid black;
+}
+
+.form-btn {
+  align-self: flex-end;
 }
