@@ -1,31 +1,32 @@
-.inputDiv {
-    width: 400px;
-    height: 400px;
-    background-color: aqua;
+#book-list {
+  display: block;
+  padding: 6px;
 }
 
-#delete {
-    display: none;
+table {
+  width: 100%;
+  margin: 0;
 }
 
-#booksInput {
-    display: flex;
-    flex-direction: column;
+#book-list td {
+  display: block;
+  margin-bottom: 6px;
 }
 
-#booksInput p {
-    font-weight: bold;
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 12px 0;
 }
 
-.divider {
-    border-bottom: 2px solid gray;
-    margin: 6px 0;
+.info {
+  display: block;
+  margin-bottom: 6px;
 }
 
-#contactForm {
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    padding: 6px;
-    gap: 12px;
+#divider {
+  border-bottom: 1px solid gray;
+  width: 100%;
+  height: 0;
 }

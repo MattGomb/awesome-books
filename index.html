@@ -12,26 +12,28 @@
   <main>
 
    <section>
-    <h1>All awesome books</h1>
-    <div id="booksInput"></div>
-    <form id="contactForm">
-      <label for="titleInput" hidden>Title</label>
-      <input class="forminput" type="text" id="titleInput" placeholder="Title" required>
-      <label for="authorInput" hidden>Author</label>
-      <input class="forminput" type="text" id="authorInput" placeholder="Author" required>
-      <label for="buttonInput" hidden>Add Book</label>
-      <button class="forminput" type="button" id="buttonInput">Add</button>
+    <h1>Awesome books</h1>
+    <div id="booksInput">
+      <table class="table">
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <form id="inputForm">
+      <div class="form">
+        <label for="title" hidden>Title</label>
+        <input class="forminput" type="text" id="titleInput" placeholder="Title" required>
+      </div>
+      <div class="form">
+        <label for="author" hidden>Author</label>
+        <input class="forminput" type="text" id="authorInput" placeholder="Author" required>
+      </div>
+      <div class="form">
+        <label for="button" hidden>Add Book</label>
+        <input type="submit" value="Add Book">
+      </div>
     </form>
-
    </section>
-    
-
-
-
   </main>
-  
-
-
   <script src="script.js"></script>
 </body>
 
