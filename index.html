@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Awesome books project</title>
+</head>
+<body>
+
+  <main>
+
+   <section>
+    <h1>Awesome books</h1>
+    <div id="booksInput">
+      <table class="table">
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <form id="inputForm">
+      <div class="form">
+        <label for="title" hidden>Title</label>
+        <input class="forminput" type="text" id="titleInput" placeholder="Title" required>
+      </div>
+      <div class="form">
+        <label for="author" hidden>Author</label>
+        <input class="forminput" type="text" id="authorInput" placeholder="Author" required>
+      </div>
+      <div class="form">
+        <label for="button" hidden>Add Book</label>
+        <input type="submit" value="Add Book">
+      </div>
+    </form>
+   </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
