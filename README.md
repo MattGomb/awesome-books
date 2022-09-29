@@ -13,9 +13,9 @@ Cool design included! ;)
 - No Frameworks allowed ;)
 - GitHub, GitHub Desktop, VSCode editor
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://mattgomb.github.io/awesome-books/)
 
 
 ## Getting Started
