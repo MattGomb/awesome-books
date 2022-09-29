@@ -31,13 +31,21 @@ body {
 
 #booksInput {
   display: none;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
 }
 
 #inputForm {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
   text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .table {
@@ -97,6 +105,11 @@ td:nth-child(3n) {
 }
 
 #contactForm {
-  display: none;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
 }
 

@@ -108,3 +108,23 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   // remove from localstorage
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
+
+//navbar display things
+
+document.getElementById('navBooklist').addEventListener('click', () => {
+  document.getElementById('booksInput').style.display = 'flex';
+  document.getElementById('inputForm').style.display = 'none';
+  document.getElementById('contactForm').style.display = 'none';
+});
+
+document.getElementById('navNewbook').addEventListener('click', () => {
+  document.getElementById('booksInput').style.display = 'none';
+  document.getElementById('inputForm').style.display = 'flex';
+  document.getElementById('contactForm').style.display = 'none';
+});
+
+document.getElementById('navContact').addEventListener('click', () => {
+  document.getElementById('booksInput').style.display = 'none';
+  document.getElementById('inputForm').style.display = 'none';
+  document.getElementById('contactForm').style.display = 'flex';
+});
