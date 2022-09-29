@@ -121,3 +121,9 @@ td:nth-child(3n) {
   flex-direction: column;
   font-size: 1.25rem;
 }
+
+#current_date {
+  align-self: flex-end;
+  margin-right: 1rem;
+  margin-top: 1rem ;
+}

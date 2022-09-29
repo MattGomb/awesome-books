@@ -128,3 +128,11 @@ document.getElementById('navContact').addEventListener('click', () => {
   document.getElementById('inputForm').style.display = 'none';
   document.getElementById('contactForm').style.display = 'flex';
 });
+
+date = new Date();
+year = date.getFullYear();
+month = date.getMonth() + 1;
+day = date.getDate();
+hour = date.getHours();
+minutes = date.getMinutes();
+document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year +" " + hour + ":" + minutes;
