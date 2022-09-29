@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap');
+
+*{
+  font-family: 'Roboto Slab', serif;
+}
+
 body {
   background: rgb(131, 58, 180);
   background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
@@ -21,6 +27,10 @@ body {
   list-style: none;
   flex-direction: row;
   gap: 2rem;
+}
+
+.navList a {
+  color: black;
 }
 
 .container {
@@ -111,5 +121,6 @@ td:nth-child(3n) {
   left: 50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
+  font-size: 1.25rem;
 }
 
