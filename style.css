@@ -91,11 +91,6 @@ td:nth-child(3n) {
   margin-right: 1rem;
 }
 
-.divider {
-  margin-top: 2rem;
-  border-bottom: 5px solid black;
-}
-
 .form-btn {
   align-self: flex-end;
 }
