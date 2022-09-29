@@ -53,8 +53,8 @@ class userInterface {
     const row = document.createElement('tr');
 
     row.innerHTML = `
-      <td>"${book.title}"</td>
-      <td>by ${book.author}</td>
+      <td>${book.title}</td>
+      <td>${book.author}</td>
       <td><button class="remove">remove</button></td>
     `;
 
