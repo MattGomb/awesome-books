@@ -122,8 +122,8 @@ td:nth-child(3n) {
   font-size: 1.25rem;
 }
 
-#current_date {
+#currentDate {
   align-self: flex-end;
   margin-right: 1rem;
-  margin-top: 1rem ;
+  margin-top: 1rem;
 }
