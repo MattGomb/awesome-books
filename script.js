@@ -109,7 +109,7 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
 
-//navbar display things
+// navbar display things
 
 document.getElementById('navBooklist').addEventListener('click', () => {
   document.getElementById('booksInput').style.display = 'flex';
