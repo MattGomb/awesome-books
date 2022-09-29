@@ -108,3 +108,33 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   // remove from localstorage
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
+
+// navbar display things
+
+document.getElementById('navBooklist').addEventListener('click', () => {
+  document.getElementById('booksInput').style.display = 'flex';
+  document.getElementById('inputForm').style.display = 'none';
+  document.getElementById('contactForm').style.display = 'none';
+});
+
+document.getElementById('navNewbook').addEventListener('click', () => {
+  document.getElementById('booksInput').style.display = 'none';
+  document.getElementById('inputForm').style.display = 'flex';
+  document.getElementById('contactForm').style.display = 'none';
+});
+
+document.getElementById('navContact').addEventListener('click', () => {
+  document.getElementById('booksInput').style.display = 'none';
+  document.getElementById('inputForm').style.display = 'none';
+  document.getElementById('contactForm').style.display = 'flex';
+});
+
+// dynamic date
+
+const date = new Date();
+const year = date.getFullYear();
+const month = date.getMonth() + 1;
+const day = date.getDate();
+const hour = date.getHours();
+const minutes = date.getMinutes();
+document.getElementById('currentDate').innerHTML = `${month}/${day}/${year} ${hour}:${minutes}`;
