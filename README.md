@@ -94,7 +94,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Many thanks to [@githubhandle], her insight and extra sources suggestions were essential!
+- Many thanks to [@vvoo21], her insight and extra sources suggestions were essential!
 
 ## 📝 License
 
